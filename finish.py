@@ -33,8 +33,8 @@ pixels.fill((0, 255, 0))
 pixels.show()
 
 
-HOST = '172.19.3.56'
-PORT = 33006
+HOST = 'HOST'
+PORT = 11111
 
 
 mysql_creds = {
@@ -45,7 +45,7 @@ mysql_creds = {
 }
 
 
-engine = sqll.create_engine('mysql+pymysql://ctfd:ctfd@172.19.3.56:33006/ctfd')
+engine = sqll.create_engine('mysql+pymysql://ctfd:ctfd@HOST:PORT/ctfd')
 
 
 while True:
