@@ -1,0 +1,38 @@
+---
+version: "2.2"
+
+services:
+
+  atom_brain:
+    build: Atom\ brain/
+    restart: always
+    ports:
+      - "9000:9000"
+    cpus: 0.4
+    mem_limit: 512m
+    environment:
+      - LISTEN_PORT=9000
+
+  atom_eye:
+    build: Atom\ eye/
+    restart: always
+    ports:
+      - "9001:9001"
+    cpus: 0.4
+    mem_limit: 512m
+
+  atom_heart:
+    build: Atom\ heart/
+    restart: always
+    ports:
+      - "9002:9002"
+    cpus: 0.4
+    mem_limit: 512m
+
+  schools_out:
+    build: Schools_Out/
+    restart: always
+    ports:
+      - "9003:9003"
+    cpus: 0.4
+    mem_limit: 512m
