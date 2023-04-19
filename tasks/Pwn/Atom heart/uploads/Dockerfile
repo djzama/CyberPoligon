@@ -3,7 +3,7 @@ FROM alpine:3.13.1
 WORKDIR /usr/src/
 
 COPY ./entry.sh /usr/src/entry.sh
-COPY ./brain /usr/src/heart
+COPY ../brain /usr/src/heart
 
 RUN adduser --disabled-pasword --no-create-home kuber
 RUN chown kuber:kuber /usr/src/heart
